@@ -1,8 +1,8 @@
 project( executer )
 
-add_executable(dummy_main main.cpp)
+add_executable(dummyMain main.cpp)
 
 target_link_libraries(
-	dummy_main
+	dummyMain
 	patternMap
 )

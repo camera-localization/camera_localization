@@ -9,4 +9,6 @@
 
 #include "PatternMap.h"
 
-int getTestValue(){ return 634; }
+int getTestValue() { 
+	return 634; 
+}
