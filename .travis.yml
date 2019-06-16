@@ -20,7 +20,7 @@ script:
 
 after_success:
   - echo "Success"
- 
+
 after_failure:
   - echo "Failed"
 
@@ -31,4 +31,3 @@ notifications:
       - dey.sumit.kr@gmail.com
     on_success: always # default: change
     on_failure: always # default: always
-
