@@ -10,7 +10,7 @@ before_install:
 
 install:
 # - sudo apt-get install python-dev python-numpy
-- sudo apt-get install libopencv-dev python3-opencv
+- sudo apt-get install libopencv-dev
 
 script:
   - mkdir build
