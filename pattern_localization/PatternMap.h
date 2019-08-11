@@ -9,4 +9,10 @@
 
 #pragma once
 
+#include <opencv2/opencv.hpp>
+
 int getTestValue();
+int showImage();
+
+int showImage(std::string filePath);
+
