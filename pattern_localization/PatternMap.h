@@ -1,10 +1,10 @@
 /**
  * @file PatternMap.h
- * @brief 
+ * @brief
  * @date 2019-06-15
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 
 #pragma once
