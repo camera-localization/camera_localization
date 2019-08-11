@@ -4,11 +4,11 @@ dist: xenial
 language: cpp
 compiler: gcc
 
-# before_install:
+before_install:
  - sudo add-apt-repository universe
  - sudo apt-get update
 
-# install:
+install:
 # - sudo apt-get install python-dev python-numpy
 - sudo apt-get install libopencv-dev python3-opencv
 
