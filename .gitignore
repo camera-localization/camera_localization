@@ -296,7 +296,7 @@ _deps
 *-prefix/
 
 ### Code ###
-.vscodevscode/*
+.vscode/
 # !.vscode/settings.json
 # !.vscode/tasks.json
 # !.vscode/launch.json
