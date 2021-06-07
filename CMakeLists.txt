@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.1)
 
 # Disable insource build - to keep source neat
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
