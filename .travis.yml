@@ -1,21 +1,24 @@
 # Basic reference: https://www.codeproject.com/Articles/1084565/Cplusplus-Continuous-Integration-Setup
-dist: xenial
-# sudo: false
+os: linux
+dist: bionic
+sudo: required
 language: cpp
-compiler: gcc
+compiler:
+  - clang
+  - gcc
 
 before_install:
  - sudo add-apt-repository universe
- - sudo apt-get update
+ - sudo apt update
 
 install:
 # - sudo apt-get install python-dev python-numpy
-- sudo apt-get install libopencv-dev
+- sudo apt install libopencv-dev
 
 script:
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake .. -DCMAKE_BUILD_TYPE=Release
   - cmake --build . --config Release -- -j2
 
 after_success:
