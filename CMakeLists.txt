@@ -14,7 +14,7 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 project( camera_localization )
 
-set(EXE_NAME "${PROJECT_NAME}-bin")  
+set(EXE_NAME "${PROJECT_NAME}-bin")
 # list of all cmake variables: https://cmake.org/cmake/help/v3.0/manual/cmake-variables.7.html
 
 # Set compiler options to extend capabilities for error reportings
