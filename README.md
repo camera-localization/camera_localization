@@ -6,3 +6,22 @@
 [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 Localize camera with respect to a known pattern
+
+## Build and run
+
+Docker is used to build and run the project. This helps to keep dependency and build environment consistent across different systems.
+
+### Clone and start the docker
+```shell
+git clone https://github.com/camera-localization/camera_localization.git
+cd camera_localization
+./run-test-system.sh
+```
+
+### Compile and run (inside docker)
+```
+mkdir build
+cmake ..
+make
+./dummyMain
+```
