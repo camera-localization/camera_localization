@@ -23,11 +23,11 @@ Start test system - dockerized
 "
 # build image using docker file
 docker build          \
-	--rm              \
-	--force-rm        \
-	--compress        \
-	-t opencv-test-vm \
-	test-system
+    --rm              \
+    --force-rm        \
+    --compress        \
+    -t opencv-test-vm \
+    test-system
 
 echo -e "${yellow}
 -----------------------------------${reset}
@@ -54,14 +54,14 @@ ${reset}${yellow}
 "
 
 # run docker
-docker run                    \
-	--rm                      \
-	--net=host                \
-	-e DISPLAY                \
-	-v ${PWD}:/home/project   \
-	-it                       \
-	--entrypoint "/bin/bash"  \
-	opencv-test-vm
+docker run                     \
+    --rm                       \
+    --net=host                 \
+    -e DISPLAY                 \
+    -v ${PWD}:"/home/project"  \
+    -it                        \
+    --entrypoint "/bin/bash"   \
+    opencv-test-vm
 
 # use a custom install of opencv from host (add floowing two line to run command)
 # -v /host/opencv/install/dir/install_4.5.1:/opencv-install-dir \

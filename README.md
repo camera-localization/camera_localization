@@ -19,7 +19,7 @@ cd camera_localization
 ```
 
 ### Compile and run (inside docker)
-```
+```shell
 mkdir build
 cmake ..
 make

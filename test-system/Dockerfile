@@ -1,4 +1,4 @@
-FROM opencvcourses/opencv-docker4.5.1
+FROM opencvcourses/opencv-docker:4.5.1
 
 # bashrc extension
 COPY .bash_custom /root/
