@@ -54,13 +54,13 @@ ${reset}${yellow}
 "
 
 # run docker
-docker run                     \
-    --rm                       \
-    --net=host                 \
-    -e DISPLAY                 \
-    -v ${PWD}:"/home/project"  \
-    -it                        \
-    --entrypoint "/bin/bash"   \
+docker run                       \
+    --rm                         \
+    --net=host                   \
+    -e DISPLAY                   \
+    -v "${PWD}":"/home/project"  \
+    -it                          \
+    --entrypoint "/bin/bash"     \
     opencv-test-vm
 
 # use a custom install of opencv from host (add floowing two line to run command)
