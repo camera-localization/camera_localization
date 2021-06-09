@@ -9,8 +9,8 @@ Localize camera with respect to a known pattern
 
 ## Build and run
 
-Docker is used to build and run the project.
-This helps to keep dependency and build environment consistent across different systems.
+Docker is used to build and run the project. This helps to keep dependency and
+build environment consistent across different systems.
 
 ### Clone and start the docker
 
