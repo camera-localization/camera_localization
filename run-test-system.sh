@@ -29,28 +29,28 @@ docker build          \
     -t opencv-test-vm \
     test-system
 
-echo -e "${yellow}
------------------------------------${reset}
+echo -e "$yellow
+-----------------------------------$reset
 
-${yellow}The project dir is shared between host and docker vm.${reset}
+${yellow}The project dir is shared between host and docker vm.$reset
 
 ${purple}Code can be modified on host and re-built
 inside docker without any need to
-restart the docker in between code changes.${reset}
+restart the docker in between code changes.$reset
 
 
-Type ${blue}ls -al${reset} to see the
+Type ${blue}ls -al$reset to see the
 source files in current host dir
 
-${green}Build / Run: ${reset}
+${green}Build / Run: $reset
   go to build dir (or create one)
-    ${blue}
+    $blue
     cd build
     cmake ..
     make
     ./my-executable
-${reset}${yellow}
------------------------------------${reset}
+$reset$yellow
+-----------------------------------$reset
 "
 
 # run docker
@@ -58,7 +58,7 @@ docker run                       \
     --rm                         \
     --net=host                   \
     -e DISPLAY                   \
-    -v "${PWD}":"/home/project"  \
+    -v "$PWD":"/home/project"  \
     -it                          \
     --entrypoint "/bin/bash"     \
     opencv-test-vm
